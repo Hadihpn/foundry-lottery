@@ -9,7 +9,7 @@ contract Raffle {
     constructor(uint256 entranceFee) {
         i_entranceFee = entranceFee;
     }
-    function enterRaffle() public {}
+    function enterRaffle() public payable {}
     function picWinner() public {}
     function getEntranceFee() external view returns (uint256) {
         return i_entranceFee;
